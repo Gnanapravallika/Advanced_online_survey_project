@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Application</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        nav {
+            background-color:black;
+          }
+          
+          nav ul li a {
+            color:black;
+          }
+          body {
+            background-image: url("img.jpeg");
+            background-size: cover;
+          }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to the Survey Application!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Online survey</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        comments
+                    </a>
+                        
+
+                    </div>
+                </li>
+
+            </ul>
+    
+                <ul class="navbar-nav mr-auto">
+                    
+                <a href="#about">About Us</a>
+                
+                <a href="#">Contact</a>
+                       
+                    
+    
+                </ul>
+                
+            
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <h1>Elevating Our Research with an Advanced Online Survey Solution</h1>
+    <p>Thank you for your interest in participating in our survey. Please click the button below to proceed.</p>
+    <div class="parent-container">   
+<button><a href="{{ url_for('survey') }}" style="color: #4CAF50; font-weight: bold;">Take the survey</a></button>
+    </div>
+    <div class="about-section" id="about">
+        
+        <h2>About Us</h2>
+        <p>An advanced online survey solution can help you elevate your research by providing you with more sophisticated survey features and analytical tools. Here are some benefits of using an advanced online survey solution:
+
+          <br>  Customization: With an advanced online survey solution, you can customize your surveys to meet your specific research needs. You can add different types of questions, skip logic, and branding elements to make your survey look and feel professional.
+            
+           <br> Data Analysis: Advanced survey solutions come with robust analytical tools that allow you to extract meaningful insights from your data. You can filter, segment, and visualize your data to better understand your target audience.
+            
+            <br>Automation: An advanced survey solution can automate many tasks, such as sending reminders and follow-up emails, saving you time and effort so you can focus on analyzing your data.
+            
+            <br>Collaboration: Many advanced survey solutions allow multiple users to collaborate on a survey project. This feature is especially useful for complex projects that involve multiple stakeholders.
+            
+            <br>Security: Advanced survey solutions come with enhanced security features that help protect your data. For example, they may offer SSL encryption, two-factor authentication, and data backups to ensure that your data is safe and secure.
+            
+            <br>Overall, using an advanced online survey solution can help you collect more accurate data, gain deeper insights, and improve the overall quality of your research.</p>
+    </div>
+    
+    <div style="height:500px;background-color:#ccc">
+        <h1>Contact Us</h1>
+        <p>Phone: 0123456789</p>
+        <p>Email: info@mywebsite.com</p>
+    </div>
+</div>
+</body>
+</html>

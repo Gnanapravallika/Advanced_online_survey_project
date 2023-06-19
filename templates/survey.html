@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+    body {
+        background-image: url("img.jpeg");
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Survey</h1>
+    <form method="POST" action="{{ url_for('survey') }}">
+        <label for="question1">Question 1:What you feel about online survey.describe few words.</label>
+        <input type="text" id="question1" name="question1" required
+
+>
+
+        <label for="question2">Question 2:Do you feel online survey is more impact then normal survey.</label>
+        <input type="text" id="question2" name="question2" required>
+
+        <label for="question3">Question 3:our survey is useful or not.describe in yes or no.</label>
+        <input type="text" id="question3" name="question3" required>
+
+        <button type="submit">Submit</button>
+    </div> 
+    </form>
+</body>
+</html>
